@@ -1,4 +1,55 @@
 @charset "UTF-8";
-body {
+. {
+    margin: 0px;
+    padding: 0px;
+}
+/* aqui em baixo vão ser configurações que ambos vão ter em comum */
+html, body { 
+    min-height: 100%; /* o tamanho mínimo do meu corpo do html e conteúdo será de 100% da view port heigth, se fosse VW seria a largura. posso colocar 100vh se for altura e vw se for lagura */
     background-color: aqua;
+}
+ 
+header {
+    background-color: black;
+    color: white;
+    text-align: center; /* centralizamos nosso conteúdo que esta dentro do header. */
+    
+
+}
+header > h1 {
+    padding-top: 50px;
+    margin: 0px; /* coloquei isso pro h1 ficar colado no "Por Milton Duarte" */
+    /*text-transform: uppercase; /* essa tag faz com que o conteúdo todo que esta dentro fique com letra maiuscula */
+    
+    font-variant: small-caps; /* essa tag faz com que todas as iniciais das letras fiquem maiúsculas. Mas percebi também que muda a font, por que ela ficou diferente */
+  }
+
+  header > p {
+      padding-bottom: 50px;
+  }
+  header a {
+      color:white; /* deixei assim apara deixar o meu link do milton branco, mas apenas esse link */
+      text-decoration: none;
+      
+  }
+  header a:hover {
+      text-decoration: underline;
+      font-weight: bolder;
+      background-color: #030583;
+  }
+footer {
+    background-color: black;
+    padding: 10px 00px 10px 00px;
+    color: white;
+    text-align: center;
+
+}
+footer a {
+    color:white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+    background-color: blue;
+    font-weight: bolder;
 }
