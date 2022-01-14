@@ -37,6 +37,33 @@ header > h1 {
       font-weight: bolder;
       background-color: #030583;
   }
+
+  section {
+      
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+       /* aqui nesses paddings, eu posso colocar, porcentagem, pixel, mas o vh nos da um efeito que quando vc dimui a aumenta a tela, o fundo de cada uma das divs diminuem de acordo com o tamanho da tela.*/
+       line-height: 2em; /* aqui vou determinar o espaço entre uma linha e outra, entre a linha de cima e a linha de baixo.*/
+       padding-left: 30px;
+
+  }
+  section.normal {
+      background-color: white;
+      color: black;
+ 
+  }
+
+  section.imagem {
+      color: white;
+      background-color: black;
+  }
+section.imagem > p {
+    width: 500px;
+    background-color: #cebaba1c;
+    /* aqui a idéia foi trazer um fundo para o nosso paragráfo, fazendo essa configuração deixamos apenas o nossa caixa P com fundo com uma cor bem transparente, e então colocamos uma largura máxima de 500px.*/
+}
+
+
 footer {
     background-color: black;
     padding: 10px 00px 10px 00px;
