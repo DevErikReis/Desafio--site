@@ -20,7 +20,7 @@ html, body {
 
     min-height: 100%; /* o tamanho mínimo do meu corpo do html e conteúdo será de 100% da view port heigth, se fosse VW seria a largura. posso colocar 100vh se for altura e vw se for lagura */
     background-color: aqua;
-    font-family: var(--font1);
+    
 }
 
  
@@ -68,22 +68,46 @@ header > h1 {
        font-family: var(--font3); 
        font-size: 3.5vw;
   }
+  section p {
+    padding-bottom: 2em;
+    
+  }
   section.normal {
       background-color: white;
       color: black;
  
   }
-
+  
   section.imagem {
       color: white;
       background-color: black;
+      box-shadow: inset 1px 1px 20px 2px black;
   }
+
 section.imagem > p {
     display: inline-block;/* aqui foi transformado a nossa caixa em uma box inline level, por que nós colocamos uma cor de fundo e queremos que ela fique bem proximo do fim da quebra de linha, se eu deixar como box level esse fundo da tag p vai ir até o final da linha. */
-    background-color: #cebaba1c;
+    background-color: #cebaba34;
     /* aqui a ideia foi trazer um fundo para o nosso paragráfo, fazendo essa configuração deixamos apenas o nossa caixa P com fundo, com uma cor bem transparente, e então colocamos uma largura máxima de 500px.*/
     padding-right: 10px; /* deu um padding de 10px para o final do fundo não ficar tão colado no fim das linhas. */
+    text-shadow: 2px 3px 3px black;
+    box-shadow: inset 0px 0px 20px 0px #00000026;
 }
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover; /* esse tipo de background-size, existém outras possibilidades, faça o teste com cada uma delas, ela posiciona a foto de fundo de varias outras formas, faça o teste para ver qual você acha melhor.*/
+    background-repeat: no-repeat;
+}
+
+section#img01 >p {
+   background-color: #00000036;
+}
+
+section#img02 { 
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+}
+
 
 
 footer {
