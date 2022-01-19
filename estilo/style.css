@@ -45,7 +45,7 @@ header > h1 {
 
   header > p {
       padding-bottom: 50px;
-      font-size: 2vw;
+      font-size: 2vw; /* :)*/
   }
   header a {
       color:white; /* deixei assim apara deixar o meu link do milton branco, mas apenas esse link */
